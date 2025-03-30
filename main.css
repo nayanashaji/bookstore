@@ -1,0 +1,116 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    font-family:cursive;
+}
+body{
+    background-color: rgb(172, 172, 149);
+    height: 100%;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+.main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(65, 62, 23);
+    color: rgb(247, 252, 180);
+    width: 100%;
+    height: 125px;
+    font-size: 25px;
+    padding: 30px;
+}
+.category
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 25px;
+    width: 500px;
+    height:300px;
+    margin:auto;
+    padding: 30px;
+    background-color: rgb(191, 181, 122);
+    line-height: 30px;
+    box-shadow: 5px 5px 15px black;
+    box-sizing: border-box; 
+}
+h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+}
+#cat{
+    background-color:rgb(247, 252, 180) ;
+    border-radius: 25px;
+    padding: 10px;
+    width: 150px;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding: 30px;
+}
+.timer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    box-shadow: 5px 5px 15px black;
+    width: 500px;
+    height: 200px;
+    padding: 20px;
+    box-sizing: border-box; 
+    margin: auto;
+    background-color: rgb(191, 181, 122);
+}
+#clock{
+    border: 5px solid rgb(74, 67, 23);
+    border-radius: 40px;
+    padding: 20px;
+    background-color: rgb(247, 252, 180);
+}
+#reg{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+    background-color: rgb(81, 73, 47);
+    padding: 20px;
+    color:rgb(247, 252, 180) ;
+    border-radius: 25px;
+    box-shadow: 5px 5px 15px black;
+    animation: blink 1s infinite;
+    width: 500px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(65, 62, 23);
+    color: rgb(247, 252, 180);
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    bottom: 0;
+    position: fixed;
+}
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}

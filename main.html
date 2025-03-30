@@ -3,41 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Quill</title>
+    <title>Quill:The Online Bookstore</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <h1>The Quill</h1>
-    <h4>The Online Bookstore</h4>
-    <h5>What type of book are you looking for?</h5>
-    <div>
-        <h6>Fiction</h6>
-        <ol>
-            <li>Fantasy</li>
-            <li>Science Fiction</li>
-            <li>Mystery</li>
-            <li>Romance</li>
-            <li>Horror</li>
-            <li>Thriller</li>
-            <li>Historical Fiction</li>
-            <li>Adventure</li>
-            <li>Contemporary Fiction</li>
-            <li>Dystopian</li>
-            <li>Young Adult</li>
-        </ol>
-        <h6>Non-Fiction</h6>
-        <ol>
-            <li>Biography</li>
-            <li>Autobiography</li>
-            <li>Memoir</li>
-            <li>History</li>
-            <li>Self-Help</li>
-            <li>Inspirational</li>
-            <li>Religious</li>
-        </ol>
+    <div class="heading">
+        <h1>Quill</h1>
+        <h3>The Online Bookstore</h3>
     </div>
-    <a href="reg.html">New registration? Click here.</a>
+    <div class="main">
+        <div class="category">
+            <h4>What type of book are you looking for?</h4>
+            <button id="cat">Fantasy</button>
+            <button id="cat">Science Fiction</button>
+            <button id="cat">Mystery</button>
+            <button id="cat">Romance</button>
+            <button id="cat">Horror</button>
+            <button id="cat">Thriller</button>
+            <button id="cat">Biography</button>
+            <button id="cat">Autobiography</button>
+            <button id="cat">History</button>
+        </div>
+        <div class="right">
+            <div class="timer">
+                <h3>Annual Day Timer</h3>
+                <br>
+                <p>Time left for annual day celebrations:</p>
+                <br>
+                <p id="clock"></p>
+            </div>
+            <a href="reg.html"><button id="reg">Click here to Register.</button></a>
+        </div>
+    </div>
     <footer>
         &copy 2025 gect
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
