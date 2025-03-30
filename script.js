@@ -25,3 +25,8 @@ function timer() {
 }
 
 timer();
+
+function showForm() {
+    document.getElementById("main").style.display = "none";
+    document.getElementById("registrationform").style.display = "block";
+}
