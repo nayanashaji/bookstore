@@ -27,6 +27,49 @@ function timer() {
 timer();
 
 function showForm() {
-    document.getElementById("main").style.display = "none";
-    document.getElementById("registrationform").style.display = "block";
+    window.location.href = "reg.html";
+}
+
+function validation()
+{
+    return email()&&username()&&password(); 
+}
+function email()
+{
+let email = document.getElementById("email").value;
+if (email.trim() === "") 
+    {
+    alert("Email field cannot be empty!");
+    return false;
+    }
+let regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+if (!regex.test(email)) {
+alert("Invalid email format!");
+return false;
+}
+return true;
+}
+function username()
+    {
+    let name = document.getElementById("name").value;
+    if (name.trim() === "") 
+        {
+        alert("Userame field cannot be empty!");
+        return false;
+        }
+    return true;
+    }
+function password() {
+let password = document.getElementById("password").value;
+if (password.trim() === "") 
+    {
+    alert("Password field cannot be empty!");
+    return false;
+    }
+let regex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
+if (!regex.test(password)) {
+alert("Password must be at least 8 characters, including a letter and a number.");
+return false;
+}
+return true;
 }
